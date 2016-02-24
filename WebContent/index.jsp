@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<%
+String urlPage = "www.MilagroAmorSalvacion.com"; 
+String telephone = "904 435 4212";
+String contact = "contactoalmasamor@gmail.com";
+%>
   <title>
   MILAGROS, AMOR Y SALVACIÓN
   </title>
@@ -24,28 +29,40 @@
 	background-color: rgb(255, 255, 255);
   }
   
+  .panel-body *:not(input):not(textarea):not(button){
+  	color:white;
+  }
+  
   .panel-body .item p,.panel-body .item h3{
    font-size:18px;
    color:black;
   }
+  
+  .help-block{
+  color:gray;
+  }
+  
   </style>
   
  
 </head>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#" style="cursor:default"><span var="title"/></a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="javascript:void(0)" onclick="selectMenu(this,0)" role="1" >ÍNICIO</a></li>
-      <li><a href="javascript:void(0)" onclick="selectMenu(this,1)" role="2" >POLÍTICAS DE PRIVACIDAD</a></li>
-      <li><a href="javascript:void(0)" onclick="selectMenu(this,2)" role="3">TERMINOS Y CONDICIONES</a></li> 
-      <li><a href="javascript:void(0)" onclick="selectMenu(this,3)" role="4">CONTACTANOS</a></li> 
-    </ul>
-  </div>
-</nav>
+
+<%@ include file="menu.jsp" %>
+
+<!-- <nav class="navbar navbar-inverse"> -->
+<!--   <div class="container-fluid"> -->
+<!--     <div class="navbar-header"> -->
+<!--       <a class="navbar-brand" href="#" style="cursor:default"><span var="title"/></a> -->
+<!--     </div> -->
+<!--     <ul class="nav navbar-nav"> -->
+<!--       <li class="active"><a href="javascript:void(0)" onclick="selectMenu(this,0)" role="1" >ÍNICIO</a></li> -->
+<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,1)" role="2" >POLÍTICAS DE PRIVACIDAD</a></li> -->
+<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,2)" role="3">TERMINOS Y CONDICIONES</a></li>  -->
+<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,3)" role="4">CONTACTANOS</a></li>  -->
+<!--     </ul> -->
+<!--   </div> -->
+<!-- </nav> -->
 
 <div id="background" style="position:absolute;top:0;left:0;display:none"></div>
 
@@ -73,7 +90,7 @@
 			<div class="item active">
 			  <img src="images/salvacion.jpg" alt="Chania">
 			  <div class="carousel-caption">
-			  <h3>MILAGROS <%="milagros" %> </h3>
+			  <h3>MILAGROS</h3>
 				<p>Lograr esas metas que parecían inalcanzables ahora seran posibles, con ayuda de nuestros rituales y personal especializado</p>
 			  			  </div>
 			  
@@ -110,10 +127,15 @@
 	  
 	  
 	  <div class="panel-body" style="display:none" id="panel-politicas">
-			
-	  	   <h3 style="color:white">POLÍTICAS Y PRIVACIDAD</h3>
-		   <p style="color:white">Almas del Amor por ningún motivo, comercializa, cede o permuta, información proporcionada por clientes o miembros, así mismo, se ha tomado las medidas necesarias, para la protección de datos, que usted como usuario, puede o no suministrar vía web, siendo 100% confidencial. Los formularios en el sitio web, solicitan información que es utilizada en el proceso de elaboración de los rituales solicitados, y él envió de ofertas o información de nuestros servicios, esto implica el consentimiento expreso del interesado a enviar sus datos de carácter personal Usted puede ejercitar sus derechos de acceso, rectificación y cancelación vía correo electrónico al administrador de este sitio. La recopilación o eliminación de datos personales, se puede realizar enviándonos un mensaje a la siguiente dirección: contactoalmasamor@gmail.com. El sitio se reserva el derecho de modificar su política de privacidad y protección de datos de forma discrecional, en cualquier momento y sin previo aviso. Los cambios que afecten al tratamiento de datos personales se comunicarán a los interesados por correo electrónico.</p>
-			
+	  	<%@ include file="politicas.jsp" %>   
+	  </div>
+	  
+	  <div class="panel-body" style="display:none" id="panel-terminos">
+	  	<%@ include file="terminos.jsp" %>   
+	  </div>
+	  
+	  <div class="panel-body" style="display:none" id="panel-terminos">
+	  	<%@ include file="contact.jsp" %>   
 	  </div>
 	  
     </div>

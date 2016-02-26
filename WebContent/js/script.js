@@ -19,11 +19,13 @@ function selectMenu(component,index){
 }
 
 function show(index){
-	$(".panel-body").hide();
-	$(".panel-body").eq(index).show();
+	$("body > .panel-default > .panel-body").hide();
+	$("body > .panel-default > .panel-body").eq(index).show();
 }
 
 function loadImages(){
 	$("#emailImage").css("display","none");
 	$("#emailImage").show('slow');
 }
+
+

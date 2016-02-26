@@ -18,32 +18,13 @@ String contact = "contactoalmasamor@gmail.com";
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/script.js"></script>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
   <script src="js/canvasDraw.js"></script>
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
-  .carousel-control{
-	background-color: rgb(255, 255, 255);
-  }
   
-  .panel-body *:not(input):not(textarea):not(button){
-  	color:white;
-  }
   
-  .panel-body .item p,.panel-body .item h3{
-   font-size:18px;
-   color:black;
-  }
-  
-  .help-block{
-  color:gray;
-  }
-  
-  </style>
-  
+  <script>
+  	$(document).ready(function(){});
+  </script>
  
 </head>
 <body>
@@ -70,9 +51,11 @@ String contact = "contactoalmasamor@gmail.com";
 
 
 <div class="panel panel-default" style="width:70%;margin:0 auto;/*height:800px;*/background-color:rgb(51,51,51)">
-      
-      <div class="panel-body" id="panel-index">
-	  	  
+		<div class="panel-heading graypanel"
+			style="text-align: center; color: white; background-color: rgb(109, 109, 109);">AMOR
+			Y DINERO</div>
+		<div class="panel-body" id="panel-index">
+	  	   
 			  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
@@ -97,7 +80,7 @@ String contact = "contactoalmasamor@gmail.com";
 			</div>
 
 			<div class="item">
-			  <img src="images/love2.jpg" alt="Chania" height="400">
+			  <img src="images/love2.jpg" alt="Chania">
 			  <div class="carousel-caption">
 			  <h3 style="color:white">AMOR</h3>
 				<p style="color:white">Centro espiritista especializado en el amor donde ayudamos a las personas que tienen problemas para alcanzar la felicidad completa</p>
@@ -123,10 +106,68 @@ String contact = "contactoalmasamor@gmail.com";
 			<span class="sr-only">Next</span>
 		  </a>
 		</div>
+		
+		<div class="panel panel-default" style="width: 80%; margin: 50px auto; /*height:800px;*/ background-color: rgb(97, 97, 105)">
+
+<!-- 		<div class="panel-heading graypanel" style="text-align: center;">AMOR Y DINERO</div> -->
+
+
+					<div class="panel-heading graypanel" style="color : white;background-color: rgb(109,109,109);">
+						<div class="row">
+							<div class="col-md-12" style="text-align: center;">
+								<h2>¿Has tenido mala suerte en el amor?</h2>
+								<h2>¿Tienes dudas de tu pareja?</h2>
+								<h2>¿Quieres recuperar a esa persona?</h2>
+							</div>
+						</div>
+					</div>
+
+
+				<div style="background-color: rgb(134, 134, 134);border-radius: 30px;text-align: center; margin: 17px; padding: 18px;">
+					<img src="images/hope.jpg" style="width: 100%;border-radius: 22px;">
+				</div>
+
+
+
+				<div class="panel-body" id="panel-index" style="padding: 10px 55px;font-size: 17px">
+		<p>Almas del Amor es un centro espiritista especializado en el amor donde ayudamos
+					a las personas que tienen problemas para alcanzar la felicidad completa en el Amor.</p>
+				</br>
+				<p>Ofrecemos asistencia en el amor por medio de consejos y sesiones espirituales.
+					Resolveremos las dudas que retumban en tu cabeza y en tu corazón mediante la ayuda
+					del Tarot de los Angeles, no dudes en consultarnos ahora mismo si la tristeza y el
+					desespero están abundando tu corazón. Juntos encontraremos el camino hacia tu
+					felicidad.</p>
+				
+		</div>
+		<div class="panel-footer graypanel" style="font-size: 12px">Para Acceder a Este Sitio Debes Ser Mayor de 18 Años.
+					Según las legislaciones vigentes, los rituales, limpias, videncias y las predicciones
+					tienen fines de entretenimiento y/o ayuda personal.</div>		
+			</div>
+		
+		
 	  </div>
 	  
 	  
+	  
 	  <div class="panel-body" style="display:none" id="panel-politicas">
+	  	<%@ include file="politicas.jsp" %>   
+	  </div>
+	  
+	  <div class="panel-body" style="display:none" id="panel-terminos">
+	  	<%@ include file="terminos.jsp" %>   
+	  </div>
+	  
+	  <div class="panel-body" style="display:none" id="panel-terminos">
+	  	<%@ include file="contact.jsp" %>   
+	  </div>
+	  
+    </div>
+
+	
+
+
+	<div class="panel-body" style="display:none" id="panel-politicas">
 	  	<%@ include file="politicas.jsp" %>   
 	  </div>
 	  

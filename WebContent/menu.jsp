@@ -1,7 +1,8 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#" style="cursor:default"><!-- <span var="title"/> -->MILAGROS, AMOR Y SALVACIÓN</a>
+    <!-- style="cursor:default" -->
+      <a class="navbar-brand" href="#"  onclick="selectMenu(this,0)" role="0"><!-- <span var="title"/> -->MILAGROS, AMOR Y SALVACIÓN</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="javascript:void(0)" onclick="selectMenu(this,0)" role="0" >ÍNICIO</a></li>

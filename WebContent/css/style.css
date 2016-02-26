@@ -1,0 +1,32 @@
+@CHARSET "ISO-8859-1";
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 600px;
+      height: 400px;
+      margin: auto;
+  }
+  .carousel-control{
+	background-color: rgb(255, 255, 255);
+  }
+  
+  .item img {
+  height: 80px;
+  }
+  
+  .panel-body *:not(input):not(textarea):not(button){
+  	color:white;
+  }
+  
+  .panel-body .item p,.panel-body .item h3{
+   font-size:18px;
+   color:black;
+  }
+  
+  .help-block{
+  color:gray;
+  }
+  
+  .graypanel{
+  	color : white;background-color: rgb(109,109,109);
+  }

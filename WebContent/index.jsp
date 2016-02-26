@@ -47,10 +47,42 @@ String contact = "contactoalmasamor@gmail.com";
 
 <div id="background" style="position:absolute;top:0;left:0;display:none"></div>
 
+
+
+<div class="row">
+	<div id="infoLink" class="fixedPanel col-md-3">
+		<div class="panel panel-default"
+			style="background-color: rgb(51, 51, 51)">
+			<div class="panel-heading graypanel"
+				style="text-align: center; color: white; background-color: rgb(109, 109, 109);font-size: 12px;">
+				<span class="glyphicon glyphicon-earphone"></span>
+				<span style="font-style: italic;">ASESORÍA GRATUITA</span>
+				</div>
+			<div class="panel-body" id="panel-index" onclick="selectMenu(this,3);loadImages()">
+			<div class="list-group">
+			    <a href="javascript:void(0)" class="list-group-item">Problemas con tu pareja ?</a>
+			    <a href="javascript:void(0)" class="list-group-item">No tienes buena suerte en el amor ?</a>
+			    <a href="javascript:void(0)" class="list-group-item">Problemas laborales ?</a>
+			    <a href="javascript:void(0)" class="list-group-item">No puedes olvidar esa persona ?</a>
+  			</div>
+  			<!-- 
+			<ul class="list-group">
+				<li></li>
+				<li></li>
+			</ul>
+			-->
+			</div>
+		</div>
+</div>
+
+
+	
+    
+
 <!--<img src="http://www.almasdelamor.com/templates/siteground-j16-24/images/headerimg.jpg" />-->
 
 
-<div class="panel panel-default" style="width:70%;margin:0 auto;/*height:800px;*/background-color:rgb(51,51,51)">
+<div class="panel panel-default col-md-8 col-md-offset-3" style="width:70%;background-color:rgb(51,51,51);padding: 0">
 		<div class="panel-heading graypanel"
 			style="text-align: center; color: white; background-color: rgb(109, 109, 109);">AMOR
 			Y DINERO</div>
@@ -130,7 +162,7 @@ String contact = "contactoalmasamor@gmail.com";
 
 
 				<div class="panel-body" id="panel-index" style="padding: 10px 55px;font-size: 17px">
-		<p>Almas del Amor es un centro espiritista especializado en el amor donde ayudamos
+		<p>Amor y salvación es un centro espiritista especializado en el amor donde ayudamos
 					a las personas que tienen problemas para alcanzar la felicidad completa en el Amor.</p>
 				</br>
 				<p>Ofrecemos asistencia en el amor por medio de consejos y sesiones espirituales.
@@ -163,25 +195,11 @@ String contact = "contactoalmasamor@gmail.com";
 	  </div>
 	  
     </div>
+</div>
 
 	
-
-
-	<div class="panel-body" style="display:none" id="panel-politicas">
-	  	<%@ include file="politicas.jsp" %>   
-	  </div>
-	  
-	  <div class="panel-body" style="display:none" id="panel-terminos">
-	  	<%@ include file="terminos.jsp" %>   
-	  </div>
-	  
-	  <div class="panel-body" style="display:none" id="panel-terminos">
-	  	<%@ include file="contact.jsp" %>   
-	  </div>
-	  
-    </div>
-
-
+	   
+    
 
 </body>
 </html>

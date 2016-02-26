@@ -14,7 +14,7 @@
   height: 80px;
   }
   
-  .panel-body *:not(input):not(textarea):not(button){
+  .panel-body *:not(input):not(textarea):not(button):not(a){
   	color:white;
   }
   
@@ -29,4 +29,18 @@
   
   .graypanel{
   	color : white;background-color: rgb(109,109,109);
+  }
+  
+  
+  .fixedPanel{
+  	z-index:100;
+    position: fixed;
+    top: 71px;
+    left: 2px;
+    /*width: 14%*/
+    
+  }
+  
+  .fixedPanel *{
+    font-size: 10px
   }

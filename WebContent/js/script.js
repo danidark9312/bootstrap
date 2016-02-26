@@ -19,8 +19,8 @@ function selectMenu(component,index){
 }
 
 function show(index){
-	$("body > .panel-default > .panel-body").hide();
-	$("body > .panel-default > .panel-body").eq(index).show();
+	$("body > div > .panel-default > .panel-body").hide();
+	$("body > div > .panel-default > .panel-body").eq(index).show();
 }
 
 function loadImages(){

@@ -1,26 +1,30 @@
 <h2>Contacto:</h2>
-<form role="form">
-	<div class="row">
+<form role="form" onsubmit="submitForm()">
 
+	<div class="alert alert-danger" style="display:none">
+	  <strong>Error</strong> Los campos marcados con * son obligatorios
+	</div>
+
+	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-				<label for="email">Nombre:</label> <input type="text"
-					class="form-control" id="nombre" />
+				<label for="email">(*)Nombre:</label> 
+				<input type="text" maxlength="40" class="form-control" id="nombre" name="nombre"/>
 					
 			</div>
 			<div class="form-group">
-				<label for="pwd">Correo electrónico:</label> 
-				<input type="email"
-					class="form-control" id="email" />
+				<label for="pwd">(*)Correo electrónico:</label> 
+				<input type="email" maxlength="40"
+					class="form-control" id="email" name="email"/>
 			</div>
 
 			<div class="form-group">
-				<label for="pwd">Asunto:</label> <input type="text"
-					class="form-control" id="asunto" />
+				<label for="pwd">(*)Asunto:</label> <input type="text" maxlength="40"
+					class="form-control" id="asunto" name="asunto"/>
 			</div>
 			<div class="form-group">
-				<label for="pwd">Mensaje:</label>
-				<textarea type="password" class="form-control" id="mensaje">
+				<label for="pwd">(*)Mensaje:</label> 
+				<textarea type="password" class="form-control" id="mensaje" name="mensaje">
 				</textarea>
 			</div>
 

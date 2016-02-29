@@ -14,9 +14,11 @@
   height: 80px;
   }
   
-  .panel-body *:not(input):not(textarea):not(button):not(a){
+  h1,h2,h3,h4,h5,p,ul li,label{
   	color:white;
   }
+  
+  
   
   .panel-body .item p,.panel-body .item h3{
    font-size:18px;
@@ -41,6 +43,6 @@
     
   }
   
-  .fixedPanel *{
+  .fixedPanel .list-group *{
     font-size: 10px
   }

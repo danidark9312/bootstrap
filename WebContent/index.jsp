@@ -1,15 +1,17 @@
+<%@page import="com.daniel.gutierrez.util.PropertieManager"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <%
-String urlPage = "www.MilagroAmorSalvacion.com"; 
-String telephone = "904 435 4212";
-String contact = "contactoalmasamor@gmail.com";
+String urlPage = PropertieManager.getValue("urlPage"); 
+String telephone = PropertieManager.getValue("phone");
+String contact = PropertieManager.getValue("contact");
+String title = PropertieManager.getValue("title");
 %>
   <title>
-  MILAGROS, AMOR Y SALVACIÓN
+<%=title%>
   </title>
   
   <meta charset="ISO-8859-1">
@@ -27,25 +29,12 @@ String contact = "contactoalmasamor@gmail.com";
   </script>
  
 </head>
-<body>
+<body style="background-image: url(images/starsbckgnd.png)">
+
 
 <%@ include file="menu.jsp" %>
 
-<!-- <nav class="navbar navbar-inverse"> -->
-<!--   <div class="container-fluid"> -->
-<!--     <div class="navbar-header"> -->
-<!--       <a class="navbar-brand" href="#" style="cursor:default"><span var="title"/></a> -->
-<!--     </div> -->
-<!--     <ul class="nav navbar-nav"> -->
-<!--       <li class="active"><a href="javascript:void(0)" onclick="selectMenu(this,0)" role="1" >ÍNICIO</a></li> -->
-<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,1)" role="2" >POLÍTICAS DE PRIVACIDAD</a></li> -->
-<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,2)" role="3">TERMINOS Y CONDICIONES</a></li>  -->
-<!--       <li><a href="javascript:void(0)" onclick="selectMenu(this,3)" role="4">CONTACTANOS</a></li>  -->
-<!--     </ul> -->
-<!--   </div> -->
-<!-- </nav> -->
-
-<div id="background" style="position:absolute;top:0;left:0;display:none"></div>
+<div id="ackground" style="position:absolute;top:0;left:0;display:none"></div>
 
 
 
@@ -58,19 +47,16 @@ String contact = "contactoalmasamor@gmail.com";
 				<span class="glyphicon glyphicon-earphone"></span>
 				<span style="font-style: italic;">ASESORÍA GRATUITA</span>
 				</div>
-			<div class="panel-body" id="panel-index" onclick="selectMenu(this,3);loadImages()">
-			<div class="list-group">
+			<div class="panel-body" id="panel-index">
+			<div class="list-group" onclick="selectMenu(this,3);loadImages()">
 			    <a href="javascript:void(0)" class="list-group-item">Problemas con tu pareja ?</a>
 			    <a href="javascript:void(0)" class="list-group-item">No tienes buena suerte en el amor ?</a>
 			    <a href="javascript:void(0)" class="list-group-item">Problemas laborales ?</a>
 			    <a href="javascript:void(0)" class="list-group-item">No puedes olvidar esa persona ?</a>
   			</div>
-  			<!-- 
-			<ul class="list-group">
-				<li></li>
-				<li></li>
-			</ul>
-			-->
+  			<div style="text-align: center;">
+  				<h1>LLama ahora </br> <%=telephone%></h1>
+  			</div>
 			</div>
 		</div>
 </div>

@@ -26,9 +26,7 @@
 
 			<button type="submit" class="btn btn-default">Envíar</button>
 		</div>
-		<div class="col-md-6" style="display:none" id="emailImage">
-			<img src="images/email.jpg" style="border-radius:17px">
-		</div>
+		
 	
 	</div>
 	<div class="col-md-8 col-md-offset-2" style="text-align: center;">

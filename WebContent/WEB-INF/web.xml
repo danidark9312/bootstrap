@@ -9,4 +9,28 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>GenericServlet</display-name>
+    <servlet-name>GenericServlet</servlet-name>
+    <servlet-class>com.daniel.gutierrez.servlet.GenericServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GenericServlet</servlet-name>
+    <url-pattern>/GenericServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<description></description>
+	<display-name>InitiServlet</display-name>
+	<servlet-name>InitiServlet</servlet-name>
+	<servlet-class>com.daniel.gutierrez.servlet.InitiServlet</servlet-class>
+	<load-on-startup>0</load-on-startup>
+</servlet>
+
+  <servlet-mapping>
+    <servlet-name>InitiServlet</servlet-name>
+    <url-pattern>/InitiServlet</url-pattern>
+    
+  </servlet-mapping>
 </web-app>

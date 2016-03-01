@@ -30,6 +30,9 @@
 
 			<button type="submit" class="btn btn-default">Envíar</button>
 		</div>
+		<div class="col-md-6" style="text-align: center">
+			<img src="images/llamanos.png">
+		</div>
 		
 	
 	</div>

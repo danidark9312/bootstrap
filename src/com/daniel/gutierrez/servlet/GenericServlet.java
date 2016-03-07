@@ -43,7 +43,11 @@ public class GenericServlet extends HttpServlet {
 			contact.setSubject(request.getParameter("asunto"));
 			contact.setMessage(request.getParameter("mensaje"));
 			
-			EmailHelper.getInstance().sendEmail(contact);
+			boolean mensajeExito = EmailHelper.getInstance().sendEmail(contact);
+			
+			if(mensajeExito){
+				request.getRequestDispatcher("index.jsp?exito=true").forward(request, response);
+			}
 			
 			
 		default:

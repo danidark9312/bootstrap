@@ -4,6 +4,23 @@
 	<div class="alert alert-danger" style="display:none">
 	  <strong>Error</strong> Los campos marcados con * son obligatorios
 	</div>
+	
+	<% 
+	if("true".equals(request.getParameter("exito"))){
+		
+	%>
+	<script>
+		$(document).ready(function(){
+			selectMenu(this,3);loadImages();
+			})
+	</script>
+	<div class="alert alert-success">
+  		<strong>Exito!</strong> Su mensaje ha sido recibido exitosamente, en breve uno de nuestros asesores se pondra en contacto
+	</div>
+	<%
+	}
+	%>
+	
 	<input name="operation" value="1" type="hidden" />
 	<div class="row">
 		<div class="col-md-6">
@@ -21,7 +38,7 @@
 				<label for="pwd" style="display:block">Teléfono:</label> 
 				<span style="float: left;width: 5%;color:white;margin-top: 6px">+1</span>
 				<input onkeypress="return isNumber(event)" type="text" class="form-control" id="phoneId" name="phoneId" style="width: 20%;float: left" maxlength="3"/>
-				<input onkeypress="return isNumber(event)" type="text" class="form-control" id="phoneText" style="width: 75%" name="phoneText" maxlength="7"/>
+				<input onkeypress="return isNumber(event)" type="text" class="form-control" id="phoneText" style="width: 75%" name="phoneText" maxlength="10"/>
 			</div>
 
 			<div class="form-group">

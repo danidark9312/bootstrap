@@ -1,10 +1,10 @@
 <h2>Contacto:</h2>
-<form role="form" onsubmit="submitForm()">
+<form role="form" onsubmit="submitForm()" action="GenericServlet">
 
 	<div class="alert alert-danger" style="display:none">
 	  <strong>Error</strong> Los campos marcados con * son obligatorios
 	</div>
-
+	<input name="operation" value="1" type="hidden" />
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
@@ -16,6 +16,12 @@
 				<label for="pwd">(*)Correo electrónico:</label> 
 				<input type="email" maxlength="40"
 					class="form-control" id="email" name="email"/>
+			</div>
+			<div class="form-group">
+				<label for="pwd" style="display:block">Teléfono:</label> 
+				<span style="float: left;width: 5%;color:white;margin-top: 6px">+1</span>
+				<input onkeypress="return isNumber(event)" type="text" class="form-control" id="phoneId" name="phoneId" style="width: 20%;float: left" maxlength="3"/>
+				<input onkeypress="return isNumber(event)" type="text" class="form-control" id="phoneText" style="width: 75%" name="phoneText" maxlength="7"/>
 			</div>
 
 			<div class="form-group">

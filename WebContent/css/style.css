@@ -36,10 +36,10 @@
   
   .fixedPanel{
   	z-index:100;
-    position: fixed;
+    /*position: fixed
     top: 71px;
     left: 2px;
-    /*width: 14%*/
+    width: 14%*/
     
   }
   

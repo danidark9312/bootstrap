@@ -68,7 +68,7 @@ String title = PropertieManager.getValue("title");
 <!--<img src="http://www.almasdelamor.com/templates/siteground-j16-24/images/headerimg.jpg" />-->
 
 
-<div class="panel panel-default col-md-8 col-md-offset-3" style="width:70%;background-color:rgb(51,51,51);padding: 0">
+<div class="panel panel-default col-md-8" style="background-color:rgb(51,51,51);padding: 0">
 		<div class="panel-heading graypanel"
 			style="text-align: center; color: white; background-color: rgb(109, 109, 109);">AMOR
 			Y DINERO</div>

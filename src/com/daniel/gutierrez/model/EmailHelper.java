@@ -32,7 +32,7 @@ public class EmailHelper {
 	      Properties properties = System.getProperties();
 
 	  	properties.put("mail.smtp.auth", "true");
-		properties.put("mail.smtp.host", "smtp.gmail.com");
+//		properties.put("mail.smtp.host", "smtp.gmail.com");
 		properties.put("mail.smtp.port", "465");
 		properties.put("mail.smtp.ssl.enable", "true");
 		properties.put("mail.smtp.ssl.trust", "smtp.gmail.com");

@@ -51,8 +51,6 @@ function submitForm(){
 		isValid = false; 
 	}
 	
-	
-	
 	if(isValid){
 		$(".alert.alert-danger").fadeOut();
 		document.forms[0].submit();	

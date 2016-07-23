@@ -176,7 +176,11 @@ String title = PropertieManager.getValue("title");
 	  	<%@ include file="terminos.jsp" %>   
 	  </div>
 	  
-	  <div class="panel-body" style="display:none" id="panel-terminos">
+	  <div class="panel-body" style="display:none" id="panel-testimonios">
+	  	<%@ include file="testimonios.jsp" %>   
+	  </div>
+	  
+	  <div class="panel-body" style="display:none" id="panel-contact">
 	  	<%@ include file="contact.jsp" %>   
 	  </div>
 	  

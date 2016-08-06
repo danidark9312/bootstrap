@@ -9,7 +9,18 @@ String urlPage = PropertieManager.getValue("urlPage");
 String telephone = PropertieManager.getValue("phone");
 String contact = PropertieManager.getValue("contact");
 String title = PropertieManager.getValue("title");
+String isContactUs = request.getParameter("contactenos");
+
+if(isContactUs!=null){
+	%>
+<script>
+	var isContact = true;
+</script>
+	<% 
+	}
 %>
+
+
   <title>
 <%=title%>
   </title>
@@ -25,7 +36,13 @@ String title = PropertieManager.getValue("title");
   
   
   <script>
-  	$(document).ready(function(){});
+  	$(document).ready(function(){
+  		if(isContact){
+  			selectMenu(this,4);
+  			loadImages()	
+  		}
+  		
+  	});
   </script>
  
 </head>
@@ -48,7 +65,7 @@ String title = PropertieManager.getValue("title");
 				<span style="font-style: italic;">ASESORÍA GRATUITA</span>
 				</div>
 			<div class="panel-body" id="panel-index">
-			<div class="list-group" onclick="selectMenu(this,3);loadImages()">
+			<div class="list-group" onclick="selectMenu(this,4);loadImages()">
 			    <a href="javascript:void(0)" class="list-group-item">Problemas con tu pareja ?</a>
 			    <a href="javascript:void(0)" class="list-group-item">No tienes buena suerte en el amor ?</a>
 			    <a href="javascript:void(0)" class="list-group-item">Problemas laborales ?</a>
@@ -158,7 +175,7 @@ String title = PropertieManager.getValue("title");
 					felicidad.</p>
 				
 		</div>
-		<div class="panel-footer graypanel" style="font-size: 12px">Para Acceder a Este Sitio Debes Ser Mayor de 18 Años.
+		<div class="panel-footer graypanel" style="font-size: 12px">Para acceder a este sitio debes ser mayor de 18 Años.
 					Según las legislaciones vigentes, los rituales, limpias, videncias y las predicciones
 					tienen fines de entretenimiento y/o ayuda personal.</div>		
 			</div>

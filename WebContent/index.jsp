@@ -11,15 +11,15 @@ String contact = PropertieManager.getValue("contact");
 String title = PropertieManager.getValue("title");
 String isContactUs = request.getParameter("contactenos");
 
-if(isContactUs!=null){
-	%>
-<script>
-	var isContact = true;
-</script>
-	<% 
-	}
+String option = request.getParameter("option");
+
+
 %>
 
+<script>
+var isContact = "<%=isContactUs!=null%>";
+	var option = "<%=option%>";
+</script>
 
   <title>
 <%=title%>
@@ -37,9 +37,19 @@ if(isContactUs!=null){
   
   <script>
   	$(document).ready(function(){
-  		if(isContact){
+  		
+  		if(isContact!="false"){
   			selectMenu(this,4);
   			loadImages()	
+  		}
+  		
+  		else if(option!="null"){
+  			if(option == "amarres"){
+  				selectMenu(this,5);
+  			}else if(option == "contactus"){
+  				selectMenu(this,4);
+  			}
+  			
   		}
   		
   	});
@@ -85,7 +95,7 @@ if(isContactUs!=null){
 <!--<img src="http://www.almasdelamor.com/templates/siteground-j16-24/images/headerimg.jpg" />-->
 
 
-<div class="panel panel-default col-md-8" style="background-color:rgb(51,51,51);padding: 0">
+<div class="panel panel-default col-md-8" style="background-color:rgb(51,51,51);padding: 0" id="content">
 		<div class="panel-heading graypanel"
 			style="text-align: center; color: white; background-color: rgb(109, 109, 109);">AMOR
 			Y DINERO</div>
@@ -201,6 +211,10 @@ if(isContactUs!=null){
 	  	<%@ include file="contact.jsp" %>   
 	  </div>
 	  
+	  <div class="panel-body" style="display:none" id="panel-contact">
+	  	<%@ include file="amarres.jsp" %>   
+	  </div>
+	  
 	  
 	  <!--Begin Comm100 Live Chat Code-->
 <div id="comm100-button-221"></div>
@@ -232,7 +246,6 @@ if(isContactUs!=null){
         }
     }, 5000)
 </script>
-
 <!--End Comm100 Live Chat Code-->
 	  
     </div>

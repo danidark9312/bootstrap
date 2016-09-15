@@ -14,8 +14,10 @@ $("span[var=title]").parent().html(title);
 function selectMenu(component,index){
 	$(".navbar .active").removeClass("active")
 	$(component).parent("LI").attr("class","active");
-	
 	show(index);
+	if(isMobile()){
+		location.href = "#content";
+	}
 }
 
 function show(index){
@@ -72,4 +74,13 @@ function isNumber(evt) {
         return false;
     }
     return true;
+}
+
+function isMobile() {
+	if (window.innerWidth <= 800 && window.innerHeight <= 600) {
+		return true;
+	} else {
+		return false;
+	}
+
 }

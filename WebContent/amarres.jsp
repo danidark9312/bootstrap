@@ -44,7 +44,7 @@
 					caso de no ver una respuesta por parte de esta persona o 
 					que no funcione este procedimiento, te guiaremos para que puedas
 					hacerlo bien. Puedes comunicarte gratuitamente con nosotros a
-					nuestra número.
+					nuestra linea.
 				</div>
 				<h2 style="text-align: center;">
 				+1 (904) 435 4212

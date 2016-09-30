@@ -185,7 +185,7 @@ var isContact = "<%=isContactUs!=null%>";
 					felicidad.</p>
 				
 		</div>
-		<div class="panel-footer graypanel" style="font-size: 12px">Para acceder a este sitio debes ser mayor de 18 Años.
+		<div class="panel-footer graypanel" style="font-size: 12px">Para acceder a este sitio debes ser mayor de edad.
 					Según las legislaciones vigentes, los rituales, limpias, videncias y las predicciones
 					tienen fines de entretenimiento y/o ayuda personal.</div>		
 			</div>

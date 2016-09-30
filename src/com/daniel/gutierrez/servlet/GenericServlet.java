@@ -32,6 +32,10 @@ public class GenericServlet extends HttpServlet {
 		int operation = Integer.parseInt(request.getParameter("operation"));
 		switch (operation) {
 		case SENDMAIL:
+			
+			
+			
+			
 			Contact contact = new Contact();
 			contact.setName(request.getParameter("nombre"));
 			contact.setEmail(request.getParameter("email"));
@@ -62,5 +66,8 @@ public class GenericServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
+	
+	
+	
 
 }

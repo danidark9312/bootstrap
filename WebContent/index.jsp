@@ -5,6 +5,12 @@
 <html lang="en">
 <head>
 <%
+
+HttpServletResponse httpResponse = (HttpServletResponse) response;
+
+httpResponse.setDateHeader("Expires", System.currentTimeMillis() + 604800000L);
+httpResponse.setHeader("Pragma", "private");
+
 String urlPage = PropertieManager.getValue("urlPage"); 
 String telephone = PropertieManager.getValue("phone");
 String contact = PropertieManager.getValue("contact");
@@ -15,6 +21,8 @@ String option = request.getParameter("option");
 
 
 %>
+
+
 
 <script>
 var isContact = "<%=isContactUs!=null%>";
@@ -27,33 +35,7 @@ var isContact = "<%=isContactUs!=null%>";
   
   <meta charset="ISO-8859-1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-  <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  <script src="js/canvasDraw.js"></script>
   
-  
-  <script>
-  	$(document).ready(function(){
-  		
-  		if(isContact!="false"){
-  			selectMenu(this,4);
-  			loadImages()	
-  		}
-  		
-  		else if(option!="null"){
-  			if(option == "amarres"){
-  				selectMenu(this,5);
-  			}else if(option == "contactus"){
-  				selectMenu(this,4);
-  			}
-  			
-  		}
-  		
-  	});
-  </script>
  
 </head>
 <body style="background-image: url(images/starsbckgnd.png)">
@@ -252,8 +234,37 @@ var isContact = "<%=isContactUs!=null%>";
 </div>
 
 	
-	   
+  <script src="js/jquery.min.js" async></script>
+  <script src="js/bootstrap.min.js" async></script>
+  <script src="js/script.js" async></script>
+  
+  <script src="js/canvasDraw.js" async></script>
+  
+  
+  <script>
+  	$(document).ready(function(){
+  		
+  		if(isContact!="false"){
+  			selectMenu(this,4);
+  			loadImages()	
+	  		}
+  		
+  		else if(option!="null"){
+  			if(option == "amarres"){
+  				selectMenu(this,5);
+  			}else if(option == "contactus"){
+  				selectMenu(this,4);
+  			}
+  			
+  		}
+  		
+  	});
+  </script>
     
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
 
 </body>
 </html>
+
+

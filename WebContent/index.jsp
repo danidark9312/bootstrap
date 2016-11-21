@@ -64,7 +64,11 @@ var isContact = "<%=isContactUs!=null%>";
 			    <a href="javascript:void(0)" class="list-group-item">No puedes olvidar esa persona ?</a>
   			</div>
   			<div style="text-align: center;">
-  				<h1>LLama ahora </br> <%=telephone%></h1>
+  				<h2>LLama ahora </br> <%=telephone%>
+  				<img src="images/wp.png" style="width: 40px" title="whatsapp disponible">
+  				</h2>
+  				
+  				<small style="color:white">*Llamadas sin Costo Adicional, sujeto a los costos del operador (costo de llamada 0,05 USD a 0,20 USD por minuto)</small>
   			</div>
 			</div>
 		</div>
@@ -89,6 +93,8 @@ var isContact = "<%=isContactUs!=null%>";
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
+			<li data-target="#myCarousel" data-slide-to="3"></li>
+			<li data-target="#myCarousel" data-slide-to="4"></li>
 			
 		  </ol>
 
@@ -98,13 +104,32 @@ var isContact = "<%=isContactUs!=null%>";
 			
 
 			<div class="item active">
+			  <img src="images/santos.jpg" alt="Chania">
+							<div class="carousel-caption">
+								<h3 style="color:white">Nunca te rindas</h3>
+								<p style="color:white">Cada mañana tienes dos opciones: Continuar durmiendo y
+									seguir soñando o levantarte y alcanzar tus sueños</p>
+							</div>
+
+						</div>
+			
+			<div class="item ">
 			  <img src="images/salvacion.jpg" alt="Chania">
 			  <div class="carousel-caption">
 			  <h3>MILAGROS</h3>
-				<p>Lograr esas metas que parecían inalcanzables ahora seran posibles, con ayuda de nuestros rituales y personal especializado</p>
+				<p>Lograr esas metas que parecían inalcanzables ahora podrían ser posibles, con ayuda de nuestros rituales y personal especializado</p>
 			  			  </div>
 			  
 			</div>
+			
+			<div class="item">
+			  <img src="images/trinidad.png" alt="Chania">
+							<div class="carousel-caption">
+								
+								<p style="color:black">Una mala actitud es como un neumático viejo si no la cambias no vas a llegar muy lejos</p>
+							</div>
+
+						</div>
 
 			<div class="item">
 			  <img src="images/love2.jpg" alt="Chania">
@@ -118,7 +143,7 @@ var isContact = "<%=isContactUs!=null%>";
 			  <img src="images/lock.jpg" alt="Chania">
 			  <div class="carousel-caption">
 			  <h3>SALVACIÓN</h3>
-				<p>Resolveremos las dudas que retumban en tu cabeza y en tu corazón mediante la ayuda del Tarot de los Angeles</p>
+				<p>Ayudamos a resolver las dudas que retumban en tu cabeza y en tu corazón mediante la ayuda del Tarot de los Angeles</p>
 			  			  </div>
 			</div>
 		  </div>
@@ -157,7 +182,7 @@ var isContact = "<%=isContactUs!=null%>";
 
 
 				<div class="panel-body" id="panel-index" style="padding: 10px 55px;font-size: 17px">
-		<p>Amor y salvación es un centro espiritista especializado en el amor donde ayudamos
+				<p>Amor y salvación es un centro espiritista especializado en el amor donde ayudamos
 					a las personas que tienen problemas para alcanzar la felicidad completa en el Amor.</p>
 				</br>
 				<p>Ofrecemos asistencia en el amor por medio de consejos y sesiones espirituales.
@@ -165,6 +190,25 @@ var isContact = "<%=isContactUs!=null%>";
 					del Tarot de los Angeles, no dudes en consultarnos ahora mismo si la tristeza y el
 					desespero están abundando tu corazón. Juntos encontraremos el camino hacia tu
 					felicidad.</p>
+					
+				<p>Trabajos rápidos y efectivos que te ayudaran</p>
+				<ul>
+					<li>Amarres de amor ágiles y efectivos</li>
+					<li>Recuperar a su pareja</li>
+					<li>Reencontrar sus seres queridos</li>
+					<li>Recuperar su empleo</li>
+					<li>Solucionar problemas de amor</li>
+					<li>Mejorar la relación con su familia</li>
+					<li>Mejorar su vida personal, profesional y laboral</li>
+					<li>Encontrar el amor de su vida</li>
+				</ul>
+				<p>
+				Nuestros psicólogos espiritistas le haran un análisis que permita determinar si usted posee o esta bajo 
+				algún efecto de brujería o proceso negativo que hayan podido realizarle para frenar su progreso, perder sus
+				relaciones afectivas o incluso llegar a la desesperación.
+				</p>
+				<p>Luego podran determinar si es posible realizar una limpieza que permita retomar su vida habitual y compartir
+				tiempo de calidad con las personas que ama</p>
 				
 		</div>
 		<div class="panel-footer graypanel" style="font-size: 12px">Para acceder a este sitio debes ser mayor de edad.
@@ -197,46 +241,24 @@ var isContact = "<%=isContactUs!=null%>";
 	  	<%@ include file="amarres.jsp" %>   
 	  </div>
 	  
+	  <!-- 7 -->
+	  <div class="panel-body" style="display:none" id="panel-contact">
+	  	<%@ include file="rituales.jsp" %>   
+	  </div>
+	  
 	  
 	  <!--Begin Comm100 Live Chat Code-->
 <div id="comm100-button-221"></div>
-<script type="text/javascript">
-    var Comm100API = Comm100API || new Object;
-    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
-    var comm100_chatButton = new Object;
-    comm100_chatButton.code_plan = 221;
-    comm100_chatButton.div_id = 'comm100-button-221';
-    Comm100API.chat_buttons.push(comm100_chatButton);
-    Comm100API.site_id = 219688;
-    Comm100API.main_code_plan = 221;
 
-    var comm100_lc = document.createElement('script');
-    comm100_lc.type = 'text/javascript';
-    comm100_lc.async = true;
-    comm100_lc.src = 'https://chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
-    var comm100_s = document.getElementsByTagName('script')[0];
-    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
-
-    setTimeout(function() {
-        if (!Comm100API.loaded) {
-            var lc = document.createElement('script');
-            lc.type = 'text/javascript';
-            lc.async = true;
-            lc.src = 'https://hostedmax.comm100.com/chatserver/livechat.ashx?siteId=' + Comm100API.site_id;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(lc, s);
-        }
-    }, 5000)
-</script>
 <!--End Comm100 Live Chat Code-->
 	  
     </div>
 </div>
 
 	
-  <script src="js/jquery.min.js" async></script>
-  <script src="js/bootstrap.min.js" async></script>
-  <script src="js/script.js" async></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" ></script>
+  <script src="js/script.js" ></script>
   
   <script src="js/canvasDraw.js" async></script>
   
@@ -254,12 +276,25 @@ var isContact = "<%=isContactUs!=null%>";
   				selectMenu(this,5);
   			}else if(option == "contactus"){
   				selectMenu(this,4);
+  			}else if(option == "rituales"){
+  				selectMenu(this,6);
   			}
   			
   		}
   		
   	});
   </script>
+  
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-87654356-1', 'auto');
+	  ga('send', 'pageview');
+
+</script>
     
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="css/style.css" rel="stylesheet" type="text/css"/>

@@ -45,8 +45,8 @@ public class BasicFilter implements Filter {
     	Matcher matcher = compile.matcher(requestURI);
     	
     	if(matcher.matches()){
-    		System.out.println("javascript");
-    		System.out.println(requestURI);
+//    		System.out.println("javascript");
+//    		System.out.println(requestURI);
     		
     		HttpServletResponse httpResponse = (HttpServletResponse) response;
             httpResponse.setHeader("Cache-Control", "private");

@@ -5,7 +5,8 @@ import java.io.IOException;
 import javax.servlet.http.HttpServletResponse;
 
 public enum Option {
-	AMARRES("amarres");
+	AMARRES("amarres"),
+	RITUALES("rituales");
 	
 	String option;
 	

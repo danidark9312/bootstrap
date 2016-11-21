@@ -12,7 +12,7 @@
 	ejercitar sus derechos de acceso, rectificación y cancelación vía
 	correo electrónico al administrador de este sitio. La recopilación o
 	eliminación de datos personales, se puede realizar enviándonos un
-	mensaje a la siguiente dirección: contactoalmasamor@gmail.com. El sitio
+	mensaje a la siguiente dirección: <%=contact%>. El sitio
 	se reserva el derecho de modificar su política de privacidad y
 	protección de datos de forma discrecional, en cualquier momento y sin
 	previo aviso. Los cambios que afecten al tratamiento de datos

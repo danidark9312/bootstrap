@@ -68,7 +68,7 @@
 <h5>COSTO DE LLAMADAS</h5>
 
 <ul>
-	<li>El sitio web www.almasdelamor.com no realiza ningún cobro por
+	<li>El sitio web <%=urlPage%> no realiza ningún cobro por
 		su comunicación telefónica, los valores que le sean facturados por tal
 		concepto, serán los ya acordados entre usted y su empresa de
 		telefonía, así mismo, serán estos mismo quienes realicen el recaudo de
@@ -76,8 +76,23 @@
 	<li>El valor de la llamada al <%=telephone%> dentro de los Estados
 		Unidos, no tendrá un coste adicional.</li>
 	<li>El valor de la llamada al número <%=telephone%> dentro del
-		territorio de los EE.UU tiene un costo de $0,20 US dólar, Incluido
+		territorio de los EE.UU tiene un costo máximo de $0,20 US dólar, Incluido
 		impuestos.</li>
+
+</ul>
+<h5>REEMBOLSO</h5>
+
+<ul>
+	<li>En caso de solicitar un servicio ofrecido por el 
+		psicólogo espiritista encargado, esta persona deberá pagar por los materiales necesarios
+		para la realización de este. Los materiales se consumen al inicio del proceso
+		del amarre o hechizo y no es posible realizar reembolso del dinero utilizado  
+	</li>
+	<li>Al realizar cualquier tipo de procedimiento se hace
+		responsable y asume su costo y como benficiario del servicio debe
+		seguir con el proceso y capacitacion necesaria de nuestros
+		especialistas</li>
+
 
 </ul>
 

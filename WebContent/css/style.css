@@ -2,7 +2,7 @@
 
  .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 600px;
+/*       width: 600px; */
       height: 400px;
       margin: auto;
   }
@@ -16,6 +16,9 @@
   
   h1,h2,h3,h4,h5,p,ul li,label,ol{
   	color:white;
+  }
+  small{
+  color:white;
   }
   
   

@@ -1,5 +1,5 @@
 
-<h1 style="color: white;text-align: center;">Como hacer correctamente un amarre</h1>
+<h1 style="color: white;text-align: center;">Como hacer un amarre correctamente</h1>
 
 <h3 style="text-align: center;">Amarres efectivos, rápidos y especializados</h3>
 
@@ -34,7 +34,9 @@
 	 	<p>Mas adelante lo guiaremos por una serie de pasos sencillos para realizar un amarre en su hogar, pongase en contacto con nuestros
 	 	asesores para ágilizar el proceso y validar que se realice de forma adecuada
 	 	</p>
+	 	<p>Aprendera rapidamente como hacer un amarre efectivo</p>
 	 	<br/>
+	 	<p>Existe otros tipos de amarre, algunos amarres con foto suelen ser mas efectivos dependiendo del caso en cuestión</p>
 	 	<small>Aplican condiciones y restricciones</small>
 <br/>
 

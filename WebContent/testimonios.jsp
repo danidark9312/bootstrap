@@ -1,7 +1,7 @@
 
 <h3 style="color: white; text-align: center;">Testimonios</h3>
-<div class="row">
-	<div class="col-md-12">
+<div class="row testimonio">
+	<div class="col-md-8">
 		<Strong style="color: white">Soy Jose Enriquez Maldonado</Strong>
 		<p style="color: white">Esta es mi historia, tengo 29 años y hace
 			7 mi esposa me abandonó. He dedicado mi tiempo a la pezca pero perdí
@@ -11,20 +11,17 @@
 			centro espiritual.</p>
 		<p>Este soy yo después de conocer y sentir la precensia de Dios</p>
 	</div>
-	<!--
 	<div class="col-md-4">
-		<img src="images/testimonios/t1.png">
+		<img src="images/testimonios/man1.jpg">
 	</div>
-	-->
+	
 
 </div>
 <br/>
 <br/>
-<div class="row">
-	<!--<div class="col-md-3">
-		<img src="images/testimonios/t2.png" style="  width: 200px;">
-	</div>-->
-	<div class="col-md-12 ">
+<div class="row testimonio">
+	
+	<div class="col-md-9 ">
 		<Strong style="color: white">Hola soy Maria Cortes</Strong>
 		<p style="color: white">Estoy muy agradecida con el centro
 			espiritual, me ayudaron a recuperar a mi familia. Yo estaba sola con
@@ -34,13 +31,16 @@
 			dios me los bendiga.</p>
 
 	</div>
+	<div class="col-md-3">
+		<img src="images/testimonios/mujer1.jpg">
+	</div>
 
 
 </div>
 <br/>
 <br/>
-<div class="row">
-	<div class="col-md-6">
+<div class="row testimonio">
+	<div class="col-md-8">
 		<Strong style="color: white">Me llamo Carmen Rastrillo</Strong>
 		<p style="color: white">
 		Por culpa de una 
@@ -49,20 +49,16 @@
 		muy buena suerte y Juaquin cambió porque esta mas entregado a la familia
 		y dejo de tomar. Gracias a Dios y los maestros del centro epiritual</p>
 	</div>
-	<!--<div class="col-md-6">
-		<img src="images/testimonios/t3.png">
+	<div class="col-md-4">
+		<img src="images/testimonios/mujer2.jpg">
 	</div>
-	-->
+	
 
 </div>
 
 <br/>
 <br/>
-<div class="row">
-	<!--<div class="col-md-3">
-		<img src="images/testimonios/t4.png" style="  width: 200px;">
-	</div>
-	-->
+<div class="row testimonio">
 	<div class="col-md-9 ">
 		<Strong style="color: white">Soy Yhoany Navarro</Strong>
 		
@@ -72,7 +68,9 @@
 		me habían cargado, pero ya soy libre, duermo bien y no tengo problemas 
 		en mi salud. Gracias a los hermanos del centro epiritual mi vida esta 
 		estable y pude sanarme si Dios lo permite amén</p>
-
+	</div>
+	<div class="col-md-3">
+		<img src="images/testimonios/man2.jpg">
 	</div>
 
 

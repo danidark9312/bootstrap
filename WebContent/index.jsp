@@ -56,19 +56,11 @@ var isContact = "<%=isContactUs!=null%>";
 				<span class="glyphicon glyphicon-earphone"></span>
 				<span style="font-style: italic;">ASESORÍA GRATUITA</span>
 				</div>
-			<div class="panel-body" id="panel-index">
-			<div class="list-group" onclick="selectMenu(this,4);loadImages()">
-			    <a href="javascript:void(0)" class="list-group-item">Problemas con tu pareja ?</a>
-			    <a href="javascript:void(0)" class="list-group-item">No tienes buena suerte en el amor ?</a>
-			    <a href="javascript:void(0)" class="list-group-item">Problemas laborales ?</a>
-			    <a href="javascript:void(0)" class="list-group-item">No puedes olvidar esa persona ?</a>
-  			</div>
+			<div class="panel-body" id="panel-index" style="padding: 0px">
   			<div style="text-align: center;">
   				<h2>LLama ahora </br> <%=telephone%>
   				<img src="images/wp.png" style="width: 40px" title="whatsapp disponible">
   				</h2>
-  				
-  				<small style="color:white">*Llamadas sin Costo Adicional, sujeto a los costos del operador (costo de llamada 0,05 USD a 0,20 USD por minuto)</small>
   			</div>
 			</div>
 		</div>
@@ -140,10 +132,11 @@ var isContact = "<%=isContactUs!=null%>";
 			</div>
 
 			<div class="item">
-			  <img src="images/lock.jpg" alt="Chania">
+<!-- 			  <img src="images/lock.jpg" alt="Chania"> -->
+			  <img src="images/carrying-the-cross.jpg" alt="Chania">
 			  <div class="carousel-caption">
 			  <h3>SALVACIÓN</h3>
-				<p>Ayudamos a resolver las dudas que retumban en tu cabeza y en tu corazón mediante la ayuda del Tarot de los Angeles</p>
+				<p style="color:white">Ayudamos a resolver las dudas que retumban en tu cabeza y en tu corazón mediante la ayuda del Tarot de los Angeles</p>
 			  			  </div>
 			</div>
 		  </div>
@@ -159,6 +152,8 @@ var isContact = "<%=isContactUs!=null%>";
 		  </a>
 		</div>
 		
+		<%@include file="panel-resultados.jsp" %>
+		
 		<div class="panel panel-default" style="width: 80%; margin: 50px auto; /*height:800px;*/ background-color: rgb(97, 97, 105)">
 
 <!-- 		<div class="panel-heading graypanel" style="text-align: center;">AMOR Y DINERO</div> -->
@@ -173,15 +168,17 @@ var isContact = "<%=isContactUs!=null%>";
 							</div>
 						</div>
 					</div>
+					
+					
 
 
 				<div style="background-color: rgb(134, 134, 134);border-radius: 30px;text-align: center; margin: 17px; padding: 18px;">
-					<img src="images/hope.jpg" style="width: 100%;border-radius: 22px;">
+					<img src="images/foto-santo.jpg" style="width: 100%;border-radius: 22px;">
 				</div>
 
 
 
-				<div class="panel-body" id="panel-index" style="padding: 10px 55px;font-size: 17px">
+				<div class="panel-body" id="panel-index" style="padding: 10px 15px;font-size: 17px">
 				<p>Amor y salvación es un centro espiritista especializado en el amor donde ayudamos
 					a las personas que tienen problemas para alcanzar la felicidad completa en el Amor.</p>
 				</br>
@@ -211,6 +208,11 @@ var isContact = "<%=isContactUs!=null%>";
 				tiempo de calidad con las personas que ama</p>
 				
 		</div>
+		
+		<div style="background-color: rgb(134, 134, 134);border-radius: 30px;text-align: center; margin: 17px; padding: 18px;">
+					<img src="images/dosvelas.jpg" style="width: 100%;border-radius: 22px;">
+				</div>
+		
 		<div class="panel-footer graypanel" style="font-size: 12px">Para acceder a este sitio debes ser mayor de edad.
 					Según las legislaciones vigentes, los rituales, limpias, videncias y las predicciones
 					tienen fines de entretenimiento y/o ayuda personal.</div>		
@@ -246,37 +248,87 @@ var isContact = "<%=isContactUs!=null%>";
 	  	<%@ include file="rituales.jsp" %>   
 	  </div>
 	  
+	  <!-- 8 -->
+	  <div class="panel-body" style="display:none" id="panel-contact">
+	  	<%@ include file="hechizos.jsp" %>   
+	  </div>
+	  
+	  <!-- 9 -->
+	  <div class="panel-body" style="display:none" id="panel-contact">
+	  	<%@ include file="numeroSuerte.jsp" %>   
+	  </div>
+	  
+	  <div id="infoLink" class="fixedPanel col-md-12">
+		<div class="panel panel-default"
+			style="background-color: rgb(51, 51, 51)">
+			<div class="panel-heading graypanel"
+				style="text-align: center; color: white; background-color: rgb(109, 109, 109);font-size: 12px;">
+				<span class="glyphicon glyphicon-earphone"></span>
+				<span style="font-style: italic;">ASESORÍA GRATUITA</span>
+				</div>
+			<div class="panel-body" id="panel-index">
+<!-- 			<div class="list-group" onclick="selectMenu(this,4);loadImages()"> -->
+<!-- 			    <a href="javascript:void(0)" class="list-group-item">Problemas con tu pareja ?</a> -->
+<!-- 			    <a href="javascript:void(0)" class="list-group-item">No tienes buena suerte en el amor ?</a> -->
+<!-- 			    <a href="javascript:void(0)" class="list-group-item">Problemas laborales ?</a> -->
+<!-- 			    <a href="javascript:void(0)" class="list-group-item">No puedes olvidar esa persona ?</a> -->
+<!--   			</div> -->
+  			<div style="text-align: center;">
+  				<h2>LLama ahora </br> <%=telephone%>
+  				<img src="images/wp.png" style="width: 40px" title="whatsapp disponible">
+  				</h2>
+  				
+  				<h3 style="margin-top: 0">Servicio 24 Horas</h3>
+  				
+  				<small style="color:white">*Llamadas sin Costo Adicional, sujeto a los costos del operador (costo de llamada 0,05 USD a 0,20 USD por minuto)</small>
+  			</div>
+			</div>
+		</div>
+</div>
+	  
+	  
+	  
+	  
+	  
 	  
 	  <!--Begin Comm100 Live Chat Code-->
 
-<div id="comm100-button-221"></div>
+<div id="comm100-button-221">
+
+</div>
+
 <script type="text/javascript">
-     var Comm100API = Comm100API || new Object;
-     Comm100API.chat_buttons = Comm100API.chat_buttons || [];
-     var comm100_chatButton = new Object;
-     comm100_chatButton.code_plan = 221;
-     comm100_chatButton.div_id = 'comm100-button-221';
-     Comm100API.chat_buttons.push(comm100_chatButton);
-     Comm100API.site_id = 219688;
-     Comm100API.main_code_plan = 221;
+ if(true){
 
-     var comm100_lc = document.createElement('script');
-     comm100_lc.type = 'text/javascript';
-     comm100_lc.async = true;
-     comm100_lc.src = 'https:chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
-     var comm100_s = document.getElementsByTagName('script')[0];
-     comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+    var Comm100API = Comm100API || new Object;
+    Comm100API.chat_buttons = Comm100API.chat_buttons || [];
+    var comm100_chatButton = new Object;
+    comm100_chatButton.code_plan = 221;
+    comm100_chatButton.div_id = 'comm100-button-221';
+    Comm100API.chat_buttons.push(comm100_chatButton);
+    Comm100API.site_id = 219688;
+    Comm100API.main_code_plan = 221;
 
-     setTimeout(function() {
-         if (!Comm100API.loaded) {
-             var lc = document.createElement('script');
-             lc.type = 'text/javascript';
-             lc.async = true;
-             lc.src = 'https:hostedmax.comm100.com/chatserver/livechat.ashx?siteId=' + Comm100API.site_id;
-             var s = document.getElementsByTagName('script')[0];
-             s.parentNode.insertBefore(lc, s);
-         }
-     }, 5000)
+    var comm100_lc = document.createElement('script');
+    comm100_lc.type = 'text/javascript';
+    comm100_lc.async = true;
+    comm100_lc.src = 'https:chatserver.comm100.com/livechat.ashx?siteId=' + Comm100API.site_id;
+    var comm100_s = document.getElementsByTagName('script')[0];
+    comm100_s.parentNode.insertBefore(comm100_lc, comm100_s);
+
+    setTimeout(function() {
+        if (!Comm100API.loaded) {
+            var lc = document.createElement('script');
+            lc.type = 'text/javascript';
+            lc.async = true;
+            lc.src = 'https:hostedmax.comm100.com/chatserver/livechat.ashx?siteId=' + Comm100API.site_id;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(lc, s);
+        }
+    }, 5000)
+
+}
+
 </script>
 
 <!--End Comm100 Live Chat Code-->
@@ -307,6 +359,8 @@ var isContact = "<%=isContactUs!=null%>";
   				selectMenu(this,4);
   			}else if(option == "rituales"){
   				selectMenu(this,6);
+  			}else if(option == "hechizos"){
+  				selectMenu(this,7);
   			}
   			
   		}

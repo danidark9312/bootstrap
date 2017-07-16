@@ -5,7 +5,8 @@
 
 <div class="row">
 <div class="col-md-4">
-		<img src="images/amor-amb-flames.jpg" style="width: 215px;">
+<!-- 		<img src="images/amor-amb-flames.jpg" style="width: 215px;"> -->
+		<img src="images/candles_skull.jpg" style="width: 215px;">
 	</div>
 	<div class="col-md-8">
 		<p>Existen varios rezos y métodos para regresar a su pareja y volver a compartir con ese ser amado</p>
@@ -43,7 +44,7 @@
 
 			<p>Necesitarás los siguietes ingredientes</p>
 			<ul>
-				<li>Polvo mágico del amor</li>
+				<li>Feromonas de amor</li>
 				<li>Alfiler</li>
 				<li>Perfume esotérico</li>
 				<li>Fotografía de ambos</li>
@@ -56,7 +57,7 @@
 				para está brujería de amor es colocar ambas fotografías frente a
 				frente. Luego cruza por el centro el alfiler, para unirlas, es ahí
 				que deberás rosear con el perfume esotérico encima de la foto. Lugo
-				échale el polvo mágico del amor, que quedará impregnado en ambas
+				échale las feromonas amor, que quedará impregnado en ambas
 				fotografías. Repite la siguiente frase tres veces: "Estaremos juntos
 				porque así lo quiere el destino, no importará el dinero solamente el
 				amor". Finalmente esconde las fotografías con el alfiler en algún

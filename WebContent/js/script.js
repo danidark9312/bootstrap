@@ -12,12 +12,27 @@ $("span[var=title]").parent().html(title);
 }
 
 function selectMenu(component,index){
+	activateGoogleEvent();
+	$("#bs-example-navbar-collapse-1").removeClass("in");
+	
 	$(".navbar .active").removeClass("active")
 	$(component).parent("LI").attr("class","active");
 	show(index);
 	if(isMobile()){
 		location.href = "#content";
 	}
+	
+}
+
+function activateGoogleEvent(){
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-87654356-1', 'auto');
+		  ga('send', 'pageview');
+
 }
 
 function show(index){

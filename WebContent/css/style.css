@@ -1,4 +1,4 @@
-@CHARSET "ISO-8859-1";
+	@CHARSET "ISO-8859-1";
 
  .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -49,3 +49,62 @@
   .fixedPanel .list-group *{
     font-size: 10px
   }
+  
+  .resultados p{
+background-color: gray;
+    border-radius: 5px;
+    padding: 5px;	
+}
+
+.numberResultGroup{
+	padding: 20px 0;
+	text-align: center;
+}
+
+.numberResultGroup span{
+	    width: 50px;
+    height: 100px;
+    font-size: 80px;
+    background-color: white;
+    
+}
+
+.dateInfoGroup{
+	text-align: center;
+    margin: 20px;
+}
+
+.buttonGenerarDiv{
+	text-align: center;
+}
+.buttonGenerarDiv{
+	height: 40px;
+    width: 210px;
+
+}
+
+.numberGenerator{
+	-webkit-transition: all 4s;
+	padding: 5px;
+    margin: 15px;
+    background-color: #a90000;
+    border-radius: 25px;
+}
+
+.numberResult{
+	display: none;
+    padding: 16px;
+    background-color: #28ff28;
+    color: black;
+    margin: 14px;
+    border-radius: 15px;
+	
+}
+
+.testimonio img{
+	width: 80%;
+}
+
+.testimonio div.col-md-4,.testimonio div.col-md-3{
+	text-align: center;
+}
